@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="This is the main activity."
+        android:textSize="30sp" />
+
+    <!--    Tạo table các button    -->
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome" />
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings" />
+
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnCreateHabit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Habit" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress" />
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnSong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Song" />
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 2" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnHomeMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Main" />
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/btnPomorodo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pomorodo" />
+            <Button
+                android:layout_margin="10dp"
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 2" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Go to Home Activity" />
+
+</LinearLayout>
